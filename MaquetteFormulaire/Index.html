@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="fr">
+    <meta charset="utf-8" />
+    <title>Formulaire</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form" action="Validation.html" method="get">
+        <div>
+            <input checked type="radio" name="gender" value="m." id="mister" /> <label for="mister">M.</label>
+            <input type="radio" name="gender" value="mme" id="miss"/> <label for="miss">MME</label>
+        </div>
+        <div>
+            <label for="name">Nom</label>
+            <input required type="text" name="name" id="name" />
+        </div>
+        <div>
+            <label for="surname">Prénom</label>
+            <input required type="text" name="surname" id="surname" />
+        </div>
+        <div>
+            <label for="dpt">Département</label>
+            <select required name="dpt" id="dpt">
+                <option selected disabled value="">--département--</option>
+                <option value="Allier">Allier</option>
+                <option value="Rhône-Alpes">Rhône-Alpes</option>
+                <option value="Isère">Isère</option>
+            </select>
+        </div>
+        <div>
+            <label for="adress">Adresse</label>
+            <input required type="text" name="adress" id="adress" />
+        </div>
+        <div>
+            <label for="country">Ville</label>
+            <input required type="text" name="country" id="country" />
+        </div>
+        <div>
+            <label for="old">Âge</label>
+            <input required type="number" name="old" id="old" />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" />
+        </div>
+        <div>
+            <label for="pswrd">Mot de passe</label>
+            <input required type="password" name="pswrd" id="pswrd" />
+        </div>
+
+        <div>
+            <div>
+                <label for="description">Description:</label>
+            </div>
+            <textarea name="description" id="description"></textarea>
+        </div>
+
+        <input id="validate" type="submit" name="validate" value="Valider" />
+    </form>
+</body>
+</html>
